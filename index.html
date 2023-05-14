@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="icon" type="image/svg+xml" href="/images/icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-bkg text-base text-white selection:bg-accent selection:text-bkg overflow-hidden"
+  >
+    <div
+      class="h-screen pb-12 sm:pb-0 overflow-y-auto overflow-x-hidden relative scroll-smooth perspective"
+    >
+      <nav
+        class="grid place-items-center absolute w-full top-0 z-50 drop-shadow-text-sm"
+        aria-label="Primary Navigation"
+      >
+        <a
+          href="/"
+          aria-label="Go Home"
+          class="p-1 m-4 focus:outline-none focus-visible:ring-4 ring-pink-400 rounded-full drop-shadow-text-lg hover:drop-shadow-none transition-shadow"
+        >
+          <img
+            src="images/logo1.png"
+            class="w-32 sm:w-48 lg:w-56"
+            width="280"
+            viewBox="0 0 357 86"
+            fill="none"
+            alt=""
+          />
+        </a>
+      </nav>
+
+      <header
+        class="min-h-screen flex flex-col justify-evenly items-center relative preserve-3d"
+      >
+        <div
+          class="absolute bg-gradient-to-b inset-0 bottom-3/4 from-pink-950 to-transparent"
+        ></div>
+        <div
+          class="absolute bg-gradient-to-t inset-0 top-1/3 -bottom-32 from-bkg/80 to-transparent distance-1"
+        ></div>
+        <img
+          class="absolute h-full w-full -z-20 object-cover object-center distance-1"
+          src="https://images.unsplash.com/photo-1590272456521-1bbe160a18ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=327&q=80"
+          aria-hidden="true"
+        />
+        <h1
+          class="text-5xl text-center font-bold text-white tracking-wide py-12 drop-shadow-text-sm lg:drop-shadow-text-lg distance-2"
+        >
+          <br />
+          Where Nature <br />
+          meets <br />
+          Skincare
+        </h1>
+        <a
+          href="#contact-form"
+          class="bg-pink-700 text-bkg font-medium py-3 px-8 rounded-full border border-bkg focus:outline-none focus-visible:ring-4 ring-accent ring-offset-bkg ring-offset-2 hover:bg-pink-300/90 flex items-center space-x-2 drop-shadow-text-lg hover:drop-shadow-none transition-shadow"
+        >
+          <span class="uppercase tracking-wide">Place your order now</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 256 256"
+          >
+            <rect width="256" height="256" fill="none"></rect>
+            <polyline
+              points="96 184 32 200 32 56 96 40"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="24"
+            ></polyline>
+            <polygon
+              points="160 216 96 184 96 40 160 72 160 216"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="24"
+            ></polygon>
+            <polyline
+              points="160 72 224 56 224 200 160 216"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="24"
+            ></polyline>
+          </svg>
+        </a>
+      </header>
+      <main
+        class="relative mt-16 sm:mt-24 lg:mt-40 pb-16 -mb-16 grid gap-16 sm:gap-24 lg:gap-40 overflow-hidden"
+      >
+        <section
+          aria-labelledby="headline"
+          class="container grid gap-4 text-center max-w-prose fade-up"
+        >
+          <div>
+            <small
+              class="tracking-widest text-pink-700 uppercase drop-shadow-text-sm"
+              >Our birth</small
+            >
+            <h2
+              id="headline"
+              class="text-3xl font-bold tracking-wide drop-shadow-text-md"
+            >
+              Who we are
+            </h2>
+          </div>
+          <p class="text-muted drop-shadow-text-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum sunt
+            nihil mollitia. Facere eius aspernatur molestiae tempore officia,
+            dolorem aperiam! Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit. Asperiores consequuntur eius minus architecto nisi, cum totam
+            consequatur vero tempora adipisci!
+          </p>
+        </section>
+
+        <section
+          aria-labelledby="slider"
+          class="container grid gap-4 text-center sm:text-left fade-up"
+        >
+          <div class="relative">
+            <div
+              class="hidden sm:block absolute w-8 bg-pink-600/10 -left-4 h-full"
+            ></div>
+            <div>
+              <small
+                class="tracking-widest text-pink-600 uppercase drop-shadow-text-sm"
+                >Our Products</small
+              >
+              <h2
+                id="slider"
+                class="text-3xl font-bold tracking-wide drop-shadow-text-md"
+              >
+                Our Top Sellers
+              </h2>
+            </div>
+            <div
+              class="flex flex-wrap sm:flex-nowrap justify-center sm:justify-between items-center space-x-4 space-y-4"
+            >
+              <p class="text-muted max-w-2xl drop-shadow-text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                delectus aut temporibus, saepe error quae!
+              </p>
+              <div class="flex space-x-4">
+                <button
+                  data-slideBtn
+                  id="prev"
+                  aria-label="show previous image"
+                  class="grid place-items-center bg-pink-600 hover:bg-pink-400/90 rounded-full p-2 text-bkg focus:outline-none focus-visible:ring-4 ring-offset-2 ring-offset-bkg ring-pink-700 disabled:bg-accent/20 disabled:text-pink-600"
+                  disabled
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="36"
+                    height="36"
+                    class="pointer-events-none"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <rect width="256" height="256" fill="none"></rect>
+                    <circle
+                      cx="128"
+                      cy="128"
+                      r="96"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="24"
+                    ></circle>
+                    <polyline
+                      points="121.9 161.9 88 128 121.9 94.1"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="24"
+                    ></polyline>
+                    <line
+                      x1="168"
+                      y1="128"
+                      x2="88"
+                      y2="128"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="24"
+                    ></line>
+                  </svg>
+                </button>
+                <button
+                  data-slideBtn
+                  id="next"
+                  aria-label="show next image"
+                  class="grid place-items-center bg-pink-600 hover:bg-pink-400/90 rounded-full p-2 text-bkg focus:outline-none focus-visible:ring-4 ring-offset-2 ring-offset-bkg ring-pink-700 disabled:bg-accent/20 disabled:text-pink-600"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="36"
+                    height="36"
+                    class="pointer-events-none"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <rect width="256" height="256" fill="none"></rect>
+                    <circle
+                      cx="128"
+                      cy="128"
+                      r="96"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="24"
+                    ></circle>
+                    <polyline
+                      points="134.1 161.9 168 128 134.1 94.1"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="24"
+                    ></polyline>
+                    <line
+                      x1="88"
+                      y1="128"
+                      x2="168"
+                      y2="128"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="24"
+                    ></line>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="-mt-10 sm:-mt-20 lg:-mt-36 container xs:w-screen fade-up">
+          <div
+            class="flex transition-transform duration-500"
+            data-slideContainer
+          >
+            <div
+              class="relative w-full xs:w-auto flex-grow flex-shrink-0 xs:basis-96 pr-4"
+              data-slide
+            >
+              <img
+                loading="lazy"
+                class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer"
+                src="https://images.unsplash.com/photo-1616750819456-5cdee9b85d22?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
+                alt="Iceland Scene"
+              />
+              <p
+                class="absolute bottom-4 left-4 px-4 py-2 bg-bkg font-bold text-lg pointer-events-none tracking-wide [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 transition-opacity"
+              >
+                Face Cleansers
+              </p>
+            </div>
+            <div
+              class="relative w-full xs:w-auto flex-grow flex-shrink-0 xs:basis-96 pr-4"
+              data-slide
+            >
+              <img
+                loading="lazy"
+                class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer"
+                src="https://images.unsplash.com/photo-1620916297397-a4a5402a3c6c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                alt="Iceland Scene"
+              />
+              <p
+                class="absolute bottom-4 left-4 px-4 py-2 bg-bkg font-bold text-lg pointer-events-none tracking-wide [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 transition-opacity"
+              >
+                Facial Serums
+              </p>
+            </div>
+            <div
+              class="relative w-full xs:w-auto flex-grow flex-shrink-0 xs:basis-96 pr-4"
+              data-slide
+            >
+              <img
+                loading="lazy"
+                class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer"
+                src="https://images.unsplash.com/photo-1619451334792-150fd785ee74?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1402&q=80"
+                alt="Iceland Scene"
+              />
+              <p
+                class="absolute bottom-4 left-4 px-4 py-2 bg-bkg font-bold text-lg pointer-events-none tracking-wide [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 transition-opacity"
+              >
+                Facial Gel
+              </p>
+            </div>
+            <div
+              class="relative w-full xs:w-auto flex-grow flex-shrink-0 xs:basis-96 pr-4"
+              data-slide
+            >
+              <img
+                loading="lazy"
+                class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer"
+                src="https://images.unsplash.com/photo-1599305090598-fe179d501227?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1364&q=80"
+                alt="Iceland Scene"
+              />
+              <p
+                class="absolute bottom-4 left-4 px-4 py-2 bg-bkg font-bold text-lg pointer-events-none tracking-wide [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 transition-opacity"
+              >
+                Lip Scrubs
+              </p>
+            </div>
+            <div
+              class="relative w-full xs:w-auto flex-grow flex-shrink-0 xs:basis-96 pr-4"
+              data-slide
+            >
+              <img
+                loading="lazy"
+                class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer"
+                src="https://images.unsplash.com/photo-1597931752949-98c74b5b159f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                alt="Iceland Scene"
+              />
+              <p
+                class="absolute bottom-4 left-4 px-4 py-2 bg-bkg font-bold text-lg pointer-events-none tracking-wide [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 transition-opacity"
+              >
+                Body Lotion
+              </p>
+            </div>
+            <div
+              class="relative w-full xs:w-auto flex-grow flex-shrink-0 xs:basis-96 pr-4"
+              data-slide
+            >
+              <img
+                loading="lazy"
+                class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer"
+                src="https://images.unsplash.com/photo-1614806687007-2215a9db3b1c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                alt="Iceland Scene"
+              />
+              <p
+                class="absolute bottom-4 left-4 px-4 py-2 bg-bkg font-bold text-lg pointer-events-none tracking-wide [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 transition-opacity"
+              >
+                Natural Soaps
+              </p>
+            </div>
+            <div
+              class="relative w-full xs:w-auto flex-grow flex-shrink-0 xs:basis-96 pr-4"
+              data-slide
+            >
+              <img
+                loading="lazy"
+                class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer"
+                src="https://images.unsplash.com/photo-1616750819574-7e38aa8046fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                alt="Iceland Scene"
+              />
+              <p
+                class="absolute bottom-4 left-4 px-4 py-2 bg-bkg font-bold text-lg pointer-events-none tracking-wide [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 transition-opacity"
+              >
+                Face Wash
+              </p>
+            </div>
+            <div
+              class="relative w-full xs:w-auto flex-grow flex-shrink-0 xs:basis-96"
+              data-slide
+            >
+              <img
+                loading="lazy"
+                class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer"
+                src="https://images.unsplash.com/photo-1567721913486-6585f069b332?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80"
+                alt="Iceland Scene"
+              />
+              <p
+                class="absolute bottom-4 left-4 px-4 py-2 bg-bkg font-bold text-lg pointer-events-none tracking-wide [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 transition-opacity"
+              >
+                Beauty Bundles
+              </p>
+            </div>
+          </div>
+        </div>
+        <section
+          aria-labelledby="map"
+          class="container flex flex-wrap md:space-x-16 space-y-12 md:space-y-0 justify-between items-center"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1619895862022-09114b41f16f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            alt="Map"
+            width="400"
+            class="grow md:flex-1 fade-up"
+            loading="lazy"
+          />
+          <div
+            class="grid gap-4 text-center md:text-left grow md:flex-1 fade-up"
+          >
+            <div class="relative">
+              <div
+                class="hidden md:block absolute w-8 bg-pink-900/10 -left-4 h-full"
+              ></div>
+              <small class="tracking-widest text-pink-700 uppercase"
+                >Creater of Farfura's Skincare</small
+              >
+              <h2 id="map" class="text-3xl font-bold tracking-wide">
+                Brief <br />
+                Introduction
+              </h2>
+            </div>
+            <p class="text-muted max-w-2xl">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta
+              ipsum blanditiis quos obcaecati voluptates? Ullam.
+            </p>
+          </div>
+        </section>
+        <section
+          aria-labelledby="cta"
+          class="container grid gap-4 text-center max-w-prose fade-up"
+        >
+          <div>
+            <small class="tracking-widest text-pink-700 uppercase"
+              >Subscribe</small
+            >
+            <h2 id="cta" class="text-3xl font-bold tracking-wide">
+              Be the first one to get the latest update
+            </h2>
+          </div>
+          <p class="text-muted max-w-2xl mx-auto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
+            quo?
+          </p>
+          <form
+            id="contact-form"
+            class="border-4 border-pink-700 rounded-full p-1 flex items-center justify-between max-w-md mx-auto"
+          >
+            <input
+              type="email"
+              id="email"
+              required
+              placeholder="Email Address"
+              class="p-2 mx-4 bg-transparent w-full text-sm flex-1 border-b-2 border-transparent rounded-none caret-pink-500 placeholder:text-white focus:placeholder:text-muted focus:outline-none focus:border-pink-700"
+            />
+            <label class="sr-only" for="email">Enter your email address</label>
+            <button
+              class="bg-pink-600 text-bkg font-medium text-sm py-3 px-4 sm:px-8 rounded-full border border-bkg focus:outline-none focus-visible:ring-4 ring-pink-500 ring-offset-bkg ring-offset-2 hover:bg-pink-800/90 flex space-x-2 shrink-0"
+              id="contact-btn"
+            >
+              <span class="uppercase tracking-wide">Sign Up</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                class="pointer-events-none"
+                viewBox="0 0 256 256"
+              >
+                <rect width="256" height="256" fill="none"></rect>
+                <path
+                  d="M210.3,35.9,23.9,88.4a8,8,0,0,0-1.2,15l85.6,40.5a7.8,7.8,0,0,1,3.8,3.8l40.5,85.6a8,8,0,0,0,15-1.2L220.1,45.7A7.9,7.9,0,0,0,210.3,35.9Z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="24"
+                ></path>
+                <line
+                  x1="110.9"
+                  y1="145.1"
+                  x2="156.1"
+                  y2="99.9"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="24"
+                ></line>
+              </svg>
+            </button>
+          </form>
+        </section>
+      </main>
+      <footer
+        class="border-t border-pink-700 mt-16 sm:mt-24 lg:mt-40 py-6 sm:py-8 md:py-12"
+      >
+        <div
+          class="container flex flex-wrap md:justify-between items-center md:items-start gap-12"
+        >
+          <div
+            class="grid gap-2 grow justify-items-center md:justify-items-start basis-full md:basis-1/4"
+          >
+            <p class="text-muted text-sm text-center md:text-left">
+              Find your perfect solution <br />here.
+            </p>
+          </div>
+          <nav
+            aria-label="Secondary navigation"
+            class="text-sm flex flex-col items-center sm:items-start sm:flex-row text-center sm:text-left gap-6 justify-between md:justify-around grow basis-full md:basis-1/2 mt-2"
+          >
+            <div class="grid gap-3">
+              <p
+                class="font-bold underline decoration-pink-500 decoration-4 underline-offset-2 tracking-wide px-2"
+              >
+                About
+              </p>
+              <ul aria-label="About Farfura's Skincare">
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-pink-600 transition-colors focus:outline-none focus-visible:ring-4 ring-offset-2 ring-offset-bkg px-2 ring-pink-800 rounded-full"
+                  >
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-pink-600 transition-colors focus:outline-none focus-visible:ring-4 ring-offset-2 ring-offset-bkg px-2 ring-pink-800 rounded-full"
+                  >
+                    Cart
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-pink-600 transition-colors focus:outline-none focus-visible:ring-4 ring-offset-2 ring-offset-bkg px-2 ring-pink-800 rounded-full"
+                  >
+                    Skincare tips
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="grid gap-3">
+              <p
+                class="font-bold underline decoration-pink-600 decoration-4 underline-offset-2 tracking-wide px-2"
+              >
+                Products
+              </p>
+              <ul aria-label="Traverse Locations">
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-pink-400 transition-colors focus:outline-none focus-visible:ring-4 ring-offset-2 ring-offset-bkg px-2 ring-pink-600 rounded-full"
+                  >
+                    Face Cleanser
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-pink-400 transition-colors focus:outline-none focus-visible:ring-4 ring-offset-2 ring-offset-bkg px-2 ring-pink-600 rounded-full"
+                  >
+                    Body Scrubs
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-pink-400 transition-colors focus:outline-none focus-visible:ring-4 ring-offset-2 ring-offset-bkg px-2 ring-pink-700 rounded-full"
+                  >
+                    Soaps
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-pink-400 transition-colors focus:outline-none focus-visible:ring-4 ring-offset-2 ring-offset-bkg px-2 ring-pink-600 rounded-full"
+                  >
+                    Face wash
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-pink-400 transition-colors focus:outline-none focus-visible:ring-4 ring-offset-2 ring-offset-bkg px-2 ring-pink-600 rounded-full"
+                  >
+                    Face Masks
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-pink-400 transition-colors focus:outline-none focus-visible:ring-4 ring-offset-2 ring-offset-bkg px-2 ring-pink-600 rounded-full"
+                  >
+                    Shampoo and Conditioners
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="grid gap-3">
+              <p
+                class="font-bold underline decoration-pink-600 decoration-4 underline-offset-2 tracking-wide px-2"
+              >
+                Contact Us
+              </p>
+              <ul aria-label="Contact Traverse">
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-pink-400 transition-colors focus:outline-none focus-visible:ring-4 ring-offset-2 ring-offset-bkg px-2 ring-pink-500 rounded-full"
+                  >
+                    Email
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-pink-400 transition-colors focus:outline-none focus-visible:ring-4 ring-offset-2 ring-offset-bkg px-2 ring-pink-500 rounded-full"
+                  >
+                    Instagram
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-pink-400 transition-colors focus:outline-none focus-visible:ring-4 ring-offset-2 ring-offset-bkg px-2 ring-pink-500 rounded-full"
+                  >
+                    Facebook
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
