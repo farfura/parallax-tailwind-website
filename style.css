@@ -18,3 +18,9 @@
       transform: translateZ(-50px) scale(1.5);
     }
   }
+  @media (max-width: 600px) {
+            /* Adjust image size for screens smaller than 600px wide */
+            img.object-cover {
+                max-width: 80%; /* Reduce the image size to 80% of its container */
+            }
+        }
